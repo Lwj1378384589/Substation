@@ -3,7 +3,7 @@
     <el-tabs v-model="activeName" @tab-click="handleClick" type="border-card" style="height:197px;width:364px;font-size:14px;">
       <el-tab-pane v-for="item in items" :key="item.id" :label="item.label" :name="item.name">
         <ul>
-          <li v-if='item.children.length>0' v-for="item1 in item.children"  :key="item1.id">{{item1.text}} </li>
+          <li v-if='item.children.length>0' v-for="item1 in item.children"  :key="item1.id"><a :href="item1.url">{{item1.text}}</a> </li>
         </ul>
       </el-tab-pane>
     </el-tabs>  

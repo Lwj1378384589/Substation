@@ -5,7 +5,7 @@ import particulars from '@/views/particulars.vue';
 
 const _routes=[
     {
-        path:'/',
+        path:'/particulars',
         component:main,
         children:[
             {
